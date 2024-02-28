@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomamo</title>
+    <style>
+        .banner{
+            background-image:url(./images/bannerImg.avif);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .banner>h1{
+            font-size: 100px;
+        }
+        .banner>h2{
+            font-size: 45px;
+        }
+        .links{
+            padding: 10px;
+            font-size: 20px;
+            width: 60%;
+            float: right;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .links > a{
+            text-decoration: none;
+            color: rgba(255,255,255,.7);
+            transition: all .5s;
+        }
+        .links > a:hover{            
+            color: rgba(255,255,255,1);
+            transform: translate(-5px) scale(1.1);
+        }
+        .searchBar{
+            border: 2px solid red;
+            background-color: beige;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: auto;
+            height: 40px;
+            width: 50%;
+            padding: 10px;
+            border-radius: 50px;
+            /* background-color: white; */
+            
+        }
+        .searchBar > input{
+            border: none;
+            background-color: beige;
+            width: 100%;
+        }
+        .searchBar > input:focus{
+            border: none;
+        }
+        .searchBar>img{
+            width: 40px;
+            border-radius: 50%;
+        }
+        .rowCard{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card{
+            margin: 20px;
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 20px;
+            }
+        .footer{
+            background-color: rgba(0,0,0,.7);
+            height: 400px;
+            width: 100%;
+            margin: 0;
+            padding: 10px;
+        }
+
+        .credit{
+            color:aliceblue;
+            font-family: monospace;
+            text-align: center;
+            font-size: 1.5rem;
+            
+        }
+
+
+        .linkss{
+            padding: 10px;
+            font-size: 20px;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .linkss > a{
+            text-decoration: none;
+            color: rgba(255,255,255,.7);
+            transition: all .3s;
+        }
+        .linkss > a:hover{            
+            color: rgba(255,255,255,1);
+            transform: scale(1.03);
+            padding: 5px;
+            margin: 5px;
+            cursor: pointer;
+            text-decoration:underline;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="banner">
+        <nav>
+            <div class="links">
+                <a href="">Investor Relations</a>
+                <a href="">Add resturant</a>
+                <a href="">Log in</a>
+                <a href="">Sign Up</a>
+            </div>
+        </nav>
+        <br>
+        <h1 style="text-align: center;color: white; font-weight: 900;">zomamo</h1>
+        <h2 style="text-align: center;">Discover the best food & drinks in Amaravati</h2>
+        <div class="searchBar">
+            <img src="./images/searchIcon.png" alt="searchIcon">
+            <input id="search_query" placeholder="Type in your Favourite Dish" type="search">
+        </div>
+    </div>
+
+    <div class="choices">
+        <div class="rowCard">
+            <div class="card">
+                <img src="./images/img1.jpg" alt="">
+                <hr>
+                <div class="cardText">
+                    <h5 style="font-family:monospace; font-size: 1rem;">Order Online</h5>
+                    <p>Stay home and order to </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/img1.jpg" alt="">
+                <hr>
+                <div class="cardText">
+                    <h5 style="font-family:monospace; font-size: 1rem;">Dining</h5>
+                    <p>View the city's favourite  </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/img1.jpg" alt="">
+                <hr>
+                <div class="cardText">
+                    <h5 style="font-family:monospace; font-size: 1rem;">Nightlife and Clubs</h5>
+                    <p>Stay home and order to </p>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="collections">
+        <h4 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center; font-size: 80px;">Collections</h4>
+        <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Nagpur, based on trends</p>
+
+    </div>
+    <div class="footer">
+        <div class="linkss">
+            <a href="">Who We Are</a>
+            <a href="">Blog</a>
+            <a href="">Work With Us</a>
+            <a href="">Investor Relations</a>
+            <a href="">Report Fraud</a>
+            <a href="">Contact Us</a>
+        </div>
+        <div class="credit">
+            © 2024 Copyright: dasisboss.com
+        </div>
+    </div>
+</body>
+</html>
